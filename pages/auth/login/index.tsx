@@ -1,8 +1,12 @@
-import Head from "next/head";
 import { getSession } from "next-auth/react";
+import Login from "../../../components/Authentication/LoginPage";
 
-export default function Home() {
-	return <></>;
+export default function LoginIndex() {
+	return (
+		<>
+			<Login />
+		</>
+	);
 }
 
 export const getServerSideProps = async (context: any) => {
